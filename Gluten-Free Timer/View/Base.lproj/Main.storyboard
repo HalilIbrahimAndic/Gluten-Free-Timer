@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gluten_Free_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="Gluten_Free_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Background View">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,15 +41,19 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-9T-652" userLabel="Pasta1 View">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="151.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCx-SS-52R" userLabel="pasta1Button">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="151.5"/>
-                                                        <connections>
-                                                            <action selector="pasta1Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fp8-KU-Q2O"/>
-                                                        </connections>
-                                                    </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barilla-fusilli" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-I1-YZY">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="151.5"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCx-SS-52R" userLabel="pasta1Button">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="151.5"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                        <state key="normal" title="barillaFusilli">
+                                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDb-M9-9C8"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -66,15 +70,18 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfq-Qq-kjL" userLabel="Pasta2 View">
                                                 <rect key="frame" x="137" y="0.0" width="100" height="151.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAt-P1-tJU" userLabel="pasta2Button">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="151.5"/>
-                                                        <connections>
-                                                            <action selector="pasta2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W4q-IF-wow"/>
-                                                        </connections>
-                                                    </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schar-penne" translatesAutoresizingMaskIntoConstraints="NO" id="7JO-K3-dy9">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="151.5"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAt-P1-tJU" userLabel="pasta2Button">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="151.5"/>
+                                                        <state key="normal" title="scharPenne">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AS6-nb-5jI"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -91,15 +98,18 @@
                                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZC-q4-Kt3" userLabel="Pasta3 View">
                                                 <rect key="frame" x="274" y="0.0" width="100" height="151.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l90-ZT-GE8" userLabel="Pasta3Button">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="151.5"/>
-                                                        <connections>
-                                                            <action selector="pasta3Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UZf-KY-Z1K"/>
-                                                        </connections>
-                                                    </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arbella-burgu" translatesAutoresizingMaskIntoConstraints="NO" id="ApF-bY-OyT">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="151.5"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l90-ZT-GE8" userLabel="Pasta3Button">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="151.5"/>
+                                                        <state key="normal" title="arbellaBurgu">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqt-00-zV7"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -121,12 +131,18 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWt-xh-EHq" userLabel="Egg1 View">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nz-Vv-5KA" userLabel="egg1Button">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
-                                                    </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soft_egg" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-sq-Uu9">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nz-Vv-5KA" userLabel="egg1Button">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
+                                                        <state key="normal" title="soft">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OZg-OS-8ee"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -143,12 +159,18 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7J-Qz-1ud" userLabel="Pasta2 View">
                                                 <rect key="frame" x="137" y="0.0" width="100" height="152"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7T-Fg-UkA" userLabel="pasta2Button">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
-                                                    </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_egg" translatesAutoresizingMaskIntoConstraints="NO" id="a23-zT-l9Q">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7T-Fg-UkA" userLabel="pasta2Button">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
+                                                        <state key="normal" title="medium">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YK7-Pi-Lkp"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -165,12 +187,18 @@
                                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="N5R-d2-pIF" userLabel="Pasta3 View">
                                                 <rect key="frame" x="274" y="0.0" width="100" height="152"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="228-CK-71X" userLabel="Pasta3Button">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
-                                                    </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard_egg" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-nJ-fEB">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="228-CK-71X" userLabel="Pasta3Button">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
+                                                        <state key="normal" title="hard">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7de-K9-V8q"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -341,28 +369,113 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="fQj-pc-ymJ" kind="presentation" identifier="goToTimer" id="IyP-jU-ovw"/>
+                        <segue destination="fQj-pc-ymJ" kind="presentation" identifier="goToTimer" id="ywl-wy-0A2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="59.598214285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="qXr-kb-fIp">
             <objects>
-                <viewController id="fQj-pc-ymJ" sceneMemberID="viewController">
+                <viewController id="fQj-pc-ymJ" customClass="SecondViewController" customModule="Gluten_Free_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lIg-sQ-Ayx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="hWN-dr-L4l">
+                                <rect key="frame" x="0.0" y="50" width="414" height="688"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udh-WJ-dgt" userLabel="Name View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jH-Cz-Z73">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="7jH-Cz-Z73" firstAttribute="leading" secondItem="udh-WJ-dgt" secondAttribute="leading" id="6R3-P9-FBh"/>
+                                            <constraint firstAttribute="bottom" secondItem="7jH-Cz-Z73" secondAttribute="bottom" id="Hux-xR-dj8"/>
+                                            <constraint firstItem="7jH-Cz-Z73" firstAttribute="top" secondItem="udh-WJ-dgt" secondAttribute="top" id="Kqd-60-erR"/>
+                                            <constraint firstAttribute="trailing" secondItem="7jH-Cz-Z73" secondAttribute="trailing" id="U48-1Q-jKU"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsr-D8-bxV" userLabel="Time View">
+                                        <rect key="frame" x="0.0" y="294.5" width="414" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLm-GQ-zIx" userLabel="Time Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="28"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vsa-ou-9k2">
+                                                <rect key="frame" x="40" y="73" width="334" height="6"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="6Da-w8-psS"/>
+                                                </constraints>
+                                                <color key="progressTintColor" systemColor="systemYellowColor"/>
+                                                <color key="trackTintColor" systemColor="opaqueSeparatorColor"/>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="BLm-GQ-zIx" firstAttribute="leading" secondItem="Tsr-D8-bxV" secondAttribute="leading" id="0Uv-Dl-Ufq"/>
+                                            <constraint firstItem="BLm-GQ-zIx" firstAttribute="top" secondItem="Tsr-D8-bxV" secondAttribute="top" id="GpT-CX-XFy"/>
+                                            <constraint firstAttribute="width" constant="414" id="WKE-FD-5Pu"/>
+                                            <constraint firstItem="vsa-ou-9k2" firstAttribute="leading" secondItem="Tsr-D8-bxV" secondAttribute="leading" constant="40" id="ew8-oz-L1W"/>
+                                            <constraint firstAttribute="trailing" secondItem="vsa-ou-9k2" secondAttribute="trailing" constant="40" id="jBx-iU-xMt"/>
+                                            <constraint firstAttribute="trailing" secondItem="BLm-GQ-zIx" secondAttribute="trailing" id="nA9-uU-c5v"/>
+                                            <constraint firstAttribute="height" constant="128" id="rhd-K9-rit"/>
+                                            <constraint firstAttribute="bottom" secondItem="vsa-ou-9k2" secondAttribute="bottom" constant="50" id="tVz-Hn-Hdm"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lx-pX-qCA">
+                                        <rect key="frame" x="172" y="618" width="70" height="70"/>
+                                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="39F-rn-9uq"/>
+                                            <constraint firstAttribute="width" constant="70" id="nU4-OP-zJr"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelPressed:" destination="fQj-pc-ymJ" eventType="touchUpInside" id="qxb-b4-rAa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Tsr-D8-bxV" secondAttribute="trailing" id="4SA-yk-XDW"/>
+                                    <constraint firstItem="Tsr-D8-bxV" firstAttribute="leading" secondItem="hWN-dr-L4l" secondAttribute="leading" id="avq-bZ-3lG"/>
+                                    <constraint firstAttribute="trailing" secondItem="udh-WJ-dgt" secondAttribute="trailing" id="gpm-2J-WIY"/>
+                                    <constraint firstItem="udh-WJ-dgt" firstAttribute="leading" secondItem="hWN-dr-L4l" secondAttribute="leading" id="mPC-SL-O60"/>
+                                    <constraint firstItem="udh-WJ-dgt" firstAttribute="top" secondItem="hWN-dr-L4l" secondAttribute="top" id="va1-68-wg7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KCz-HT-LvW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hWN-dr-L4l" firstAttribute="leading" secondItem="KCz-HT-LvW" secondAttribute="leading" id="Gb4-kX-SoS"/>
+                            <constraint firstItem="hWN-dr-L4l" firstAttribute="top" secondItem="KCz-HT-LvW" secondAttribute="top" constant="50" id="hpv-qc-WOY"/>
+                            <constraint firstItem="KCz-HT-LvW" firstAttribute="trailing" secondItem="hWN-dr-L4l" secondAttribute="trailing" id="jqs-aU-mZv"/>
+                            <constraint firstItem="KCz-HT-LvW" firstAttribute="bottom" secondItem="hWN-dr-L4l" secondAttribute="bottom" constant="70" id="ycL-fE-Rsw"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uua-TZ-nuu"/>
+                    <connections>
+                        <outlet property="choiceLabel" destination="7jH-Cz-Z73" id="agc-H3-Im3"/>
+                        <outlet property="timeLabel" destination="BLm-GQ-zIx" id="h0X-C7-rOA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YiJ-bQ-jsA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="60"/>
+            <point key="canvasLocation" x="856.52173913043487" y="59.598214285714285"/>
         </scene>
     </scenes>
     <resources>
@@ -372,8 +485,14 @@
         <image name="medium_egg" width="288" height="363"/>
         <image name="schar-penne" width="113" height="146"/>
         <image name="soft_egg" width="287" height="365"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

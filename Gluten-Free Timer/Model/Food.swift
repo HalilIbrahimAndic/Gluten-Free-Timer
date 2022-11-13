@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Food {
+    let id: String
+    let name: String
+    let time: Int
+    
+}
