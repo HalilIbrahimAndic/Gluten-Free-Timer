@@ -124,7 +124,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nz-Vv-5KA" userLabel="egg1Button">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-sq-Uu9">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soft_egg" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-sq-Uu9">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
                                                     </imageView>
                                                 </subviews>
@@ -146,7 +146,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7T-Fg-UkA" userLabel="pasta2Button">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a23-zT-l9Q">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_egg" translatesAutoresizingMaskIntoConstraints="NO" id="a23-zT-l9Q">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
                                                     </imageView>
                                                 </subviews>
@@ -168,7 +168,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="228-CK-71X" userLabel="Pasta3Button">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-nJ-fEB">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard_egg" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-nJ-fEB">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="152"/>
                                                     </imageView>
                                                 </subviews>
@@ -340,16 +340,38 @@
                             <constraint firstItem="rNT-6r-E8s" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cfW-lk-clz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="fQj-pc-ymJ" kind="presentation" identifier="goToTimer" id="IyP-jU-ovw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="59.598214285714285"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="qXr-kb-fIp">
+            <objects>
+                <viewController id="fQj-pc-ymJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lIg-sQ-Ayx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KCz-HT-LvW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uua-TZ-nuu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YiJ-bQ-jsA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="60"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arbella-burgu" width="113" height="166"/>
         <image name="barilla-fusilli" width="113" height="145"/>
+        <image name="hard_egg" width="287.5" height="366"/>
+        <image name="medium_egg" width="288" height="363"/>
         <image name="schar-penne" width="113" height="146"/>
+        <image name="soft_egg" width="287" height="365"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
