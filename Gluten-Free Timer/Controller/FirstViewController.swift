@@ -17,9 +17,8 @@ class FirstViewController: UIViewController {
        
     }
     
-    
     @IBAction func buttonPressed(_ sender: UIButton) {
-        
+        // secilen butonu ögreniyoruz
         choiceID = sender.currentTitle!
         
         //timerbrain'den degerleri burada çekecegiz
@@ -28,12 +27,10 @@ class FirstViewController: UIViewController {
         self.performSegue(withIdentifier: "goToTimer", sender: self)
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "goToTimer" {
             let destinationVC = segue.destination as! SecondViewController
-            destinationVC.choiceID = choiceID
             
             //yukarıda aldığımız degerleri burada yollıcaz
             destinationVC.choiceName = timerBrain.getFoodName()

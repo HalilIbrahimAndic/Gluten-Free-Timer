@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2028B98C29256F8D00E54284 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202FA9F229214A20006215F2 /* SecondViewController.swift */; };
+		2028B99029262D0100E54284 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2028B98F29262D0100E54284 /* alarm_sound.mp3 */; };
 		202FA9E529212850006215F2 /* TimerBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202FA9E429212850006215F2 /* TimerBrain.swift */; };
 		202FA9F729214C8A006215F2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20710A34291E3D780023646F /* FirstViewController.swift */; };
 		202FA9FA292153F1006215F2 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202FA9F9292153F1006215F2 /* Food.swift */; };
-		202FA9FE29217901006215F2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202FA9F229214A20006215F2 /* SecondViewController.swift */; };
 		20710A31291E3D780023646F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20710A30291E3D780023646F /* AppDelegate.swift */; };
 		20710A33291E3D780023646F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20710A32291E3D780023646F /* SceneDelegate.swift */; };
 		20710A38291E3D780023646F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20710A36291E3D780023646F /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2028B98F29262D0100E54284 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		202FA9E429212850006215F2 /* TimerBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBrain.swift; sourceTree = "<group>"; };
 		202FA9F229214A20006215F2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		202FA9F9292153F1006215F2 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				202FA9E929212890006215F2 /* Others */,
 				20710A3C291E3D7B0023646F /* Assets.xcassets */,
 				20710A41291E3D7B0023646F /* Info.plist */,
+				2028B98F29262D0100E54284 /* alarm_sound.mp3 */,
 			);
 			path = "Gluten-Free Timer";
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				20710A40291E3D7B0023646F /* LaunchScreen.storyboard in Resources */,
 				20710A3D291E3D7B0023646F /* Assets.xcassets in Resources */,
+				2028B99029262D0100E54284 /* alarm_sound.mp3 in Resources */,
 				20710A38291E3D780023646F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +189,7 @@
 				20710A31291E3D780023646F /* AppDelegate.swift in Sources */,
 				20710A3B291E3D780023646F /* Gluten_Free_Timer.xcdatamodeld in Sources */,
 				202FA9F729214C8A006215F2 /* FirstViewController.swift in Sources */,
-				202FA9FE29217901006215F2 /* SecondViewController.swift in Sources */,
+				2028B98C29256F8D00E54284 /* SecondViewController.swift in Sources */,
 				20710A33291E3D780023646F /* SceneDelegate.swift in Sources */,
 				202FA9E529212850006215F2 /* TimerBrain.swift in Sources */,
 			);

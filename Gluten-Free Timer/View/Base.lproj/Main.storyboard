@@ -415,24 +415,33 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vsa-ou-9k2">
-                                                <rect key="frame" x="40" y="73" width="334" height="6"/>
+                                                <rect key="frame" x="40" y="64.5" width="334" height="6"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="5" id="6Da-w8-psS"/>
                                                 </constraints>
                                                 <color key="progressTintColor" systemColor="systemYellowColor"/>
                                                 <color key="trackTintColor" systemColor="opaqueSeparatorColor"/>
                                             </progressView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivX-lO-bOH" userLabel="Total Time Label">
+                                                <rect key="frame" x="0.0" y="104.5" width="414" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="BLm-GQ-zIx" firstAttribute="leading" secondItem="Tsr-D8-bxV" secondAttribute="leading" id="0Uv-Dl-Ufq"/>
+                                            <constraint firstAttribute="bottom" secondItem="ivX-lO-bOH" secondAttribute="bottom" id="5YL-31-GYB"/>
                                             <constraint firstItem="BLm-GQ-zIx" firstAttribute="top" secondItem="Tsr-D8-bxV" secondAttribute="top" id="GpT-CX-XFy"/>
+                                            <constraint firstAttribute="trailing" secondItem="ivX-lO-bOH" secondAttribute="trailing" id="Ri5-tK-e2q"/>
                                             <constraint firstAttribute="width" constant="414" id="WKE-FD-5Pu"/>
                                             <constraint firstItem="vsa-ou-9k2" firstAttribute="leading" secondItem="Tsr-D8-bxV" secondAttribute="leading" constant="40" id="ew8-oz-L1W"/>
                                             <constraint firstAttribute="trailing" secondItem="vsa-ou-9k2" secondAttribute="trailing" constant="40" id="jBx-iU-xMt"/>
+                                            <constraint firstItem="ivX-lO-bOH" firstAttribute="leading" secondItem="Tsr-D8-bxV" secondAttribute="leading" id="mVj-S4-kuD"/>
                                             <constraint firstAttribute="trailing" secondItem="BLm-GQ-zIx" secondAttribute="trailing" id="nA9-uU-c5v"/>
                                             <constraint firstAttribute="height" constant="128" id="rhd-K9-rit"/>
-                                            <constraint firstAttribute="bottom" secondItem="vsa-ou-9k2" secondAttribute="bottom" constant="50" id="tVz-Hn-Hdm"/>
+                                            <constraint firstItem="ivX-lO-bOH" firstAttribute="top" secondItem="vsa-ou-9k2" secondAttribute="bottom" constant="35" id="tVz-Hn-Hdm"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lx-pX-qCA">
@@ -469,8 +478,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="barProgress" destination="vsa-ou-9k2" id="cZg-8n-J0z"/>
                         <outlet property="choiceLabel" destination="7jH-Cz-Z73" id="agc-H3-Im3"/>
                         <outlet property="timeLabel" destination="BLm-GQ-zIx" id="h0X-C7-rOA"/>
+                        <outlet property="totalTimeLabel" destination="ivX-lO-bOH" id="0sf-ok-Nqc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YiJ-bQ-jsA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
