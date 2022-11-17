@@ -14,3 +14,6 @@ In v1.0, foods are limited and you can not add custom product. As a further work
  - and changing the time during countdown
  
  will show up in v2.0.
+
+![GFT_first](https://user-images.githubusercontent.com/77022411/202465684-bf038147-4b5d-4623-b809-382b06f83eaf.png)
+![GFT_second](https://user-images.githubusercontent.com/77022411/202465701-fc257682-68f7-4fd6-9692-0a59920f224d.png)
