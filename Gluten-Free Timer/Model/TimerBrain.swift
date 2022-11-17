@@ -9,12 +9,18 @@ import Foundation
 
 struct TimerBrain {
     let foods = [
-        Food(id: "barillaFusilli", name: "Barilla - Fusilli", time: 2),
-        Food(id: "scharPenne", name: "Schar - Penne", time: 4),
-        Food(id: "arbellaBurgu", name: "Arbella - Burgu", time: 5),
-        Food(id: "soft", name: "Soft Egg", time: 1),
-        Food(id: "medium", name: "Medium Egg", time: 2),
-        Food(id: "hard", name: "Hard Egg", time: 3)]
+        Food(id: "barillaFusilli", name: "Barilla - Fusilli", time: 11),
+        Food(id: "scharFusilli", name: "Schar - Fusilli", time: 11),
+        Food(id: "scharSphagetti", name: "Schar - Sphagetti", time: 13),
+        Food(id: "dececcoPenne", name: "De Cecco - Mezze Penne Rigate N.141", time: 8),
+        Food(id: "enerbioKicher", name: "enerBIO - Kichererbsen Spirelli", time: 5),
+        Food(id: "enerbioSpirelli", name: "enerBIO - Rote Linsen Spirelli", time: 6),
+        Food(id: "lahmacun", name: "Glutensiz Ada - Lahmacun", time: 4),
+        Food(id: "pizza", name: "Glutensiz Ada - Pizza", time: 10),
+        Food(id: "potato", name: "Fırın Patates", time: 17),
+        Food(id: "softEgg", name: "Soft Egg", time: 3),
+        Food(id: "mediumEgg", name: "Medium Egg", time: 4),
+        Food(id: "hardEgg", name: "Hard Egg", time: 7)]
     
     var foodName: String?
     var foodTime: Int?

@@ -31,7 +31,7 @@ class SecondViewController: UIViewController {
         barProgress.progress = 0.0
         
         //Calls update timer function when start
-        updateTime(totalTime: (choiceTime!)*10)
+        updateTime(totalTime: (choiceTime!)*60)
     }
     
     //Updates the time
